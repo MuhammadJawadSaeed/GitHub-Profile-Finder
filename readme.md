@@ -5,9 +5,6 @@ A simple web app that allows users to search for GitHub profiles and view their 
 ---
 
 
-
----
-
 ## 🛠️ Features
 
 - 🔍 Search any GitHub username
