@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d1117; // dark background
+  color: #c9d1d9;       // light text
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #58a6ff; // bright blue header
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  .input {
+    padding: 0.5rem 1rem;
+    width: 70%;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #161b22;
+    color: #c9d1d9;
+
+    &::placeholder {
+      color: #8b949e;
+    }
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    background-color: #58a6ff; // GitHub green
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5699c3;
+    }
+  }
+}
+
+.profile-card {
+  background: #161b22;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 1.5rem;
+
+  .avatar {
+    flex: 1;
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+      border: 2px solid #30363d;
+    }
+  }
+
+  .details {
+    flex: 8;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 0.2rem;
+      color: #ffffff;
+    }
+
+    .username {
+      color: #8b949e;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bio {
+      margin-bottom: 1rem;
+      font-style: italic;
+      color: #c9d1d9;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      
+      li {
+        margin-bottom: 0.3rem;
+        margin-right: 1.5rem;
+        opacity: 0.6;
+        strong {
+          font-weight: 600;
+          color: #c9d1d9;
+        }
+
+        a {
+          color: #58a6ff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

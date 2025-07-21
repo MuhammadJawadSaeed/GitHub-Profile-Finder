@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #58a6ff;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.search-box .input {
+  padding: 0.5rem 1rem;
+  width: 70%;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+.search-box .input::-moz-placeholder {
+  color: #8b949e;
+}
+.search-box .input::placeholder {
+  color: #8b949e;
+}
+.search-box .button {
+  padding: 0.5rem 1rem;
+  background-color: #58a6ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-box .button:hover {
+  background-color: #5699c3;
+}
+
+.profile-card {
+  background: #161b22;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 1.5rem;
+}
+.profile-card .avatar {
+  flex: 1;
+}
+.profile-card .avatar img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #30363d;
+}
+.profile-card .details {
+  flex: 8;
+  text-align: left;
+}
+.profile-card .details h2 {
+  margin-bottom: 0.2rem;
+  color: #ffffff;
+}
+.profile-card .details .username {
+  color: #8b949e;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.profile-card .details .bio {
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #c9d1d9;
+}
+.profile-card .details ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile-card .details ul li {
+  margin-bottom: 0.3rem;
+  margin-right: 1.5rem;
+  opacity: 0.6;
+}
+.profile-card .details ul li strong {
+  font-weight: 600;
+  color: #c9d1d9;
+}
+.profile-card .details ul li a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+.profile-card .details ul li a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
