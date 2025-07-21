@@ -36,7 +36,7 @@ function profileData(details) {
             <li>
               <strong>Blog:</strong>
               <a href="${details.blog}" target="_blank"
-                >${details.blog}</a
+                >${details.blog? details.blog :"N/A"}</a
               >
             </li>
             
