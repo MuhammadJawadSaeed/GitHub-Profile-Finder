@@ -132,9 +132,9 @@ h1 {
   display: none;
 }
 
-@media (width:80%){
-  .profile-card{
+
+@media (min-width: 768px) {
+  .profile-card {
     flex-direction: row;
   }
-
 }
